@@ -3,10 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Delicious Bites Blog</title>
+    
 </head>
 <body>
-    <h1>This is a sample website</h1>
+    <header>
+        <h1>Delicious Bites Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="viewers-count">
+            <p>Viewers Count: <span id="viewers-number"></span></p>
+        </div>
+    </header>
+
+    <main class="grid-container">
+        <section id="home">
+            <h2>Welcome to Delicious Bites Blog!</h2>
+            <p>
+                Welcome to Delicious Bites Blog, where we explore the world of gastronomy, share mouthwatering recipes, and provide honest reviews of culinary experiences. Whether you're a seasoned chef or a kitchen novice, join us on a delightful journey through the realm of delicious food.
+            </p>
+            <p>
+                Our blog is dedicated to celebrating the art of cooking, discovering new flavors, and savoring the joy of good food. From savory dishes to sweet treats, we've got something to satisfy every craving. Let's embark on a culinary adventure together!
+            </p>
+            <img src="https://source.unsplash.com/800x400/?food" alt="Welcome Image">
+        </section>
+
+        <section id="recipes">
+            <h2>Delicious Recipes</h2>
+            <p>
+                Indulge your taste buds with our collection of delectable recipes. From quick and easy meals to gourmet delights, our recipes cater to all skill levels. Explore the world of culinary creativity and bring the joy of cooking into your kitchen.
+            </p>
+            <p>
+                Our team of passionate foodies is dedicated to providing step-by-step guides, cooking tips, and inspiring ideas. Whether you're looking for a hearty dinner, a refreshing beverage, or a tempting dessert, we've got the perfect recipe waiting for you.
+            </p>
+            <img src="https://source.unsplash.com/800x400/?cooking" alt="Recipes Image">
+        </section>
+
+        <section id="reviews">
+            <h2>Food Reviews</h2>
+            <p>
+                Dive into the world of culinary critiques with our honest and insightful food reviews. From trendy restaurants to hidden gems, we share our experiences to help you discover the best dining spots and culinary delights.
+            </p>
+            <p>
+                Our reviews cover everything from flavor profiles to ambiance, ensuring you make informed choices when it comes to your dining adventures. Join us as we explore the diverse and delicious world of food.
+            </p>
+            <img src="https://source.unsplash.com/800x400/?restaurant" alt="Reviews Image">
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div>
+                <p>For inquiries or assistance, please contact us:</p>
+                <ul>
+                    <li>Email: foodblogs@street.com</li>
+                    <li>Phone: +91 8893457644</li>
+                    <li>Address: Coimbatore- North</li>
+                </ul>
+            </div>
+        </section>
+        
+        
+        <section id="comments">
+            <h2>Comments</h2>
+            <div id="comment-form">
+                <label for="comment">Leave a Comment:</label>
+                <textarea id="comment" name="comment" rows="4" cols="50" required></textarea>
+                <button onclick="submitComment()">Submit</button>
+            </div>
+            <div id="comment-list">
     
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Delicious Bites Blog. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
